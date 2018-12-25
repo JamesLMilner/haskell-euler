@@ -3,8 +3,8 @@
 
 
 -- General thoughts; we don't need to check 1 and 20 as they're a given
--- if we're incrementing in 20s. also works backwards from 19 rather than 
--- forward from 2 because 2, 3 etc are more common factors than 19, 18
+-- if we're incrementing in 20s. We also work backwards from 19 rather than 
+-- forward from 2 because 2, 3 etc are more common factors than 19, 18 etc
 smallestDivisible i val = 
     if even val && i >= 2 && (val `rem` i == 0)
         then if i == 2
